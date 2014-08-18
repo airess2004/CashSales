@@ -22,22 +22,13 @@ namespace OffsetPrintingSupplies
             {
                 //db.DeleteAllTables();
 
-<<<<<<< HEAD
                 //DataBuilder d = new DataBuilder();
                 //PurchaseBuilder p = new PurchaseBuilder();
                 //SalesBuilder s = new SalesBuilder();
                 RetailPurchaseBuilder rpb = new RetailPurchaseBuilder();
                 //RetailSalesBuilder rsb = new RetailSalesBuilder();
 
-                //DataFunction(d);
-=======
-                DataBuilder d = new DataBuilder();
-                //PurchaseBuilder p = new PurchaseBuilder();
-               // SalesBuilder s = new SalesBuilder();
-
-                 // DataFunction(d);
-                //SalesFunction(s);
->>>>>>> 1e4c002760acaede633e78b2f50c688ecffec4b2
+                // DataFunction(d);
                 //PurchaseFunction(p);
                 //SalesFunction(s);
                 RetailPurchaseFunction(rpb);

@@ -19,13 +19,10 @@ namespace WebView.Controllers
         private ICoreIdentificationService _coreIdentificationService;
         private IPurchaseOrderService _purchaseOrderService;
         private ISalesOrderService _salesOrderService;
-<<<<<<< HEAD
+
         private IPriceMutationService _priceMutationService;
         private IContactGroupService _contactGroupService;
-=======
-        private IContactGroupService _contactGroupService;
 
->>>>>>> 1e4c002760acaede633e78b2f50c688ecffec4b2
         public MstContactController()
         {
             _contactService = new ContactService(new ContactRepository(), new ContactValidator());
@@ -33,10 +30,8 @@ namespace WebView.Controllers
             _barringService = new BarringService(new BarringRepository(),new BarringValidator());
             _purchaseOrderService = new PurchaseOrderService(new PurchaseOrderRepository(), new PurchaseOrderValidator());
             _salesOrderService = new SalesOrderService(new SalesOrderRepository(),new SalesOrderValidator());
-<<<<<<< HEAD
+
             _priceMutationService = new PriceMutationService(new PriceMutationRepository(), new PriceMutationValidator());
-=======
->>>>>>> 1e4c002760acaede633e78b2f50c688ecffec4b2
             _contactGroupService = new ContactGroupService(new ContactGroupRepository(), new ContactGroupValidator());
         }
 
@@ -132,11 +127,7 @@ namespace WebView.Controllers
         {
             try
             {
-<<<<<<< HEAD
                 model = _contactService.CreateObject(model, _contactGroupService);
-=======
-                model = _contactService.CreateObject(model,_contactGroupService);
->>>>>>> 1e4c002760acaede633e78b2f50c688ecffec4b2
             }
             catch (Exception ex)
             {
@@ -162,10 +153,8 @@ namespace WebView.Controllers
                 data.PIC = model.PIC;
                 data.PICContactNo = model.PICContactNo;
                 data.Email = model.Email;
-<<<<<<< HEAD
-=======
                 data.ContactGroupId = model.ContactGroupId;
->>>>>>> 1e4c002760acaede633e78b2f50c688ecffec4b2
+
                 model = _contactService.UpdateObject(data,_contactGroupService);
             }
             catch (Exception ex)
