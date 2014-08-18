@@ -20,8 +20,9 @@ namespace OffsetPrintingSupplies
             var db = new OffsetPrintingSuppliesEntities();
             using (db)
             {
-                db.DeleteAllTables();
+                //db.DeleteAllTables();
 
+<<<<<<< HEAD
                 //DataBuilder d = new DataBuilder();
                 //PurchaseBuilder p = new PurchaseBuilder();
                 //SalesBuilder s = new SalesBuilder();
@@ -29,6 +30,14 @@ namespace OffsetPrintingSupplies
                 //RetailSalesBuilder rsb = new RetailSalesBuilder();
 
                 //DataFunction(d);
+=======
+                DataBuilder d = new DataBuilder();
+                //PurchaseBuilder p = new PurchaseBuilder();
+               // SalesBuilder s = new SalesBuilder();
+
+                 // DataFunction(d);
+                //SalesFunction(s);
+>>>>>>> 1e4c002760acaede633e78b2f50c688ecffec4b2
                 //PurchaseFunction(p);
                 //SalesFunction(s);
                 RetailPurchaseFunction(rpb);
